@@ -8,5 +8,19 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let start = Date.now();
+    console.log(start)
+    let ans = 1;
+    for(i=2; i<=n;i++){
+        ans+=i;
+    }
+    let end = Date.now();
+    console.log(end)
+    let answer=((end-start)/1000);
+    console.log(answer)
+    return answer;
 }
+
+ans = calculateTime(4644444633);
+
+console.log(ans);
