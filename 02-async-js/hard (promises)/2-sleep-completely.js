@@ -4,5 +4,11 @@
  */
 
 function sleep (seconds) {
-
+    let ms = seconds*1000
+    let start = Date.now();
+    while (Date.now() < (start+ms)) {    }
+    let stop = Date.now();
+    console.log((stop-start)/1000)
 }
+
+sleep(4);
